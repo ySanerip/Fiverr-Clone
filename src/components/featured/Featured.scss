@@ -1,0 +1,118 @@
+:root {
+    --darkGreen: #013914;
+    --lightGreen: #1dbf73;
+  }
+
+.featured {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background-color:  var(--darkGreen);
+    color:white;
+
+    .container{
+        width: 1180px;
+        display: flex;
+        align-items: center;
+
+        .left{
+            position:relative;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h1{
+                font-size: 40px;
+
+                span{
+                    font-style: italic;
+                    font-weight: 300;
+                }
+            }
+
+
+            .search{
+                height:48px;
+                background-color: white;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                overflow: hidden;
+
+                .searchInput{
+                    display: flex;
+                    align-items: center;
+                    gap: 7.31px;
+
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        margin: 10px;
+                    }
+
+                    input{
+                        font-size:16px;
+                        border: none;
+                        outline: none;
+                        width:445px;
+
+                        &::placeholder{
+                            color: grey;
+                        }
+                    }
+                }
+
+                button{
+                    position:realtive;
+                    right: 0;
+                    width: 103px;
+                    height: 48px;
+                    border: none;
+                    font-size: 16px;
+                    font-weight: 700;
+                    background-color: var(--lightGreen);
+                    color:white;
+                    align-self: end;   
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: #1baf6a;
+                    }
+                }
+            }
+
+            .popular{
+                padding: 20px 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                span{
+                    width: max-content;
+                }
+
+                button{
+                    width: max-content;
+                    color: white;
+                    border: 1px solid white;
+                    padding: 3.66px 7.31px;
+                    border-radius: 14.63px;
+                    background-color: transparent;
+                    font-size: 14px;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: white;
+                        color:rgb(77, 75, 75);
+                    }
+                }
+            }
+
+        }
+
+        .right{
+
+        }
+    }
+}

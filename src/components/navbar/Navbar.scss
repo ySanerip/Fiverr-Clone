@@ -1,0 +1,109 @@
+:root {
+    --darkGreen: #013914;
+    --lightGreen: #1dbf73;
+  }
+
+.navbar{
+    position:sticky;
+    top:0;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--darkGreen);
+    font-family: "Montserrat", sans-serif;
+    transition:0.5s all ease;
+
+    &.active{
+        background-color: white;
+        color: black;
+    }
+
+    .container{
+        width: 1180px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+
+        .logo{
+            font-size: 34px;
+            font-weight: bold;
+            //padding: 0 20px;
+
+            .dot{
+                color: var(--lightGreen);
+            }
+        }
+        .links{
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            font-weight: 500;
+            //padding:0 20px 0;
+            font-family: "Montserrat", sans-serif;  
+
+            .user{
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+
+                img{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50px;
+                    object-fit: cover;                    
+                }
+
+                .options{
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    padding: 20px;
+                    background-color: white;
+                    border: 10px;
+                    border: 1px solid;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    color: grey;
+                    width: 140px;
+                    font-weight: 300;
+
+                }
+            }
+
+
+
+            button{
+                color:white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: 1px solid white;
+                cursor: pointer;
+                background-color: transparent;
+
+                &:hover{
+                    background-color: var(--lightGreen);
+                    border: 1px solid var(--lightGreen);
+                }
+            }
+        }
+    }
+
+    hr{
+        width: 100%;
+        border: 0.5 solid grey;
+        height: 0;
+    }
+
+    .menu{
+        width: 1024px;
+        justify-content: space-between;
+        font-family: "Montserrat", sans-serif;  
+        padding:10px 0;
+        display:flex;
+        font-weight: 300;
+    }
+}
