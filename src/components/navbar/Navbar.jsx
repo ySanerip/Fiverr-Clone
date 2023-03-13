@@ -36,6 +36,14 @@ const Navbar = () => {
           </Link>
           <span className='dot'>.</span>
         </div>
+        {active && (
+          <div className="search">
+          <div className="searchInput">
+              <input placeholder='     What services are you looking for today?' type="text" />
+              <img src="img/search.png" alt="" />
+          </div>
+      </div>
+        )}
         <div className="links">
           <span>Liverr Bussines</span>
           <span>Explore</span>
@@ -66,9 +74,35 @@ const Navbar = () => {
         <>
           <hr />
           <div className="menu">
-            <span>test</span>
-            <span>test2</span>
+          <Link className="link menuLink" to="/">
+              Graphics & Design
+            </Link>
+            <Link className="link menuLink" to="/">
+              Video & Animation
+            </Link>
+            <Link className="link menuLink" to="/">
+              Writing & Translation
+            </Link>
+            <Link className="link menuLink" to="/">
+              AI Services
+            </Link>
+            <Link className="link menuLink" to="/">
+              Digital Marketing
+            </Link>
+            <Link className="link menuLink" to="/">
+              Music & Audio
+            </Link>
+            <Link className="link menuLink" to="/">
+              Programming & Tech
+            </Link>
+            <Link className="link menuLink" to="/">
+              Business
+            </Link>
+            <Link className="link menuLink" to="/">
+              Lifestyle
+            </Link>
           </div>
+          <hr />
         </>
       )}
     </div>

@@ -1,0 +1,23 @@
+.bottom{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+    height: 575px;
+    background-color: rgb(235, 235, 235);
+
+    .container_bottom {
+        
+        position: relative;
+        overflow: hidden;
+        width: 1300px;
+        height: 400px;
+        display: inline-block;
+
+        h1{ 
+            align-items: center;
+            padding-top: 30px;
+            color:#404145;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+}

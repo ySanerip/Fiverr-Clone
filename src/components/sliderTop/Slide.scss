@@ -1,0 +1,20 @@
+.top{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px; 
+
+    .container_top {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        width: 1210px;
+        height: 400px;
+        display: inline-block;
+
+        h1{ 
+            padding:10px;
+            color:#404145;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+}
